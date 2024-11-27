@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+/*  grijs #899CA0
+    donkergroen #1C2B32
+ */
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -16,13 +20,37 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+main {
+    max-width: 1000px;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0 30px 0
+}
+
+a {
+    text-decoration: underline;
+    color: #899CA0
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
-
+body {
+    font-family: "Poppins", sans-serif;
+}
 
 /*////////////////////////
     3. Areas
@@ -32,18 +60,130 @@ Table of Contents:
 
 /*///////////// 3.1 Header /////////////*/
 
+.header {
+    max-width: 1000px;
+    text-align: center;
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0 400px 0;
+}
 
+header h1 {
+    font-weight: 700;
+    font-size: 84px;
+    color: #1C2B32;
+    padding: 10px 0px 10px 0px
+}
 
+header p {
+    font-size: 14px;
+    padding: 5px 0 30px 0;
+    font-weight: 100px;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    color: #1C2B32;
+    background: transparent;
+    border: 2px #1C2B32 solid;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    padding: 20px 20px 20px 20px;
+}
+
+::placeholder {
+    color: #1C2B32;
+}
+
+form button {
+    color: #FFF;
+    background-color: #1C2B32;
+    border: 2px #1C2B32 solid;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px 0px -5px
+
+}
 /*///////////// 3.2 Testimonial /////////////*/
 
+.customer-quotes {
+    padding: 50px 0 50px 0;
+}
 
+.quote {
+    box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.25);
+    padding: 10px 60px;
+    margin: 20px;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    left: 30px;
+}
+
+article blockquote {
+    padding: 40px;
+}
+
+.image-and-quoter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.quoter-image {
+    max-width: 44px;
+    padding: 10px 0;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.contact-section {
+    padding: 50px 0;
+}
 
+.callcenter {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    margin: 50px 0 30px 0;
+}
+
+.contact-button {
+    border-radius: 40px 40px 40px 40px;
+    background-color: #1C2B32;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    margin: 30px 0px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq {
+    max-width: 1000px;
+    background-color: #FFFFFF;
+}
 
+details[open] {
+    background-color: #899CA0;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+summary {
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 /*///////////// 3.5 Footer /////////////*/
