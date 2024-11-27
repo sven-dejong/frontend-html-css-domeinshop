@@ -187,3 +187,13 @@ summary {
 }
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    max-width: 1000px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1C2B32;
+    font-size: 14px;
+    padding: 20px;
+    margin: 20px;
+}
